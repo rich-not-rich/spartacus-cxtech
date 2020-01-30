@@ -7,6 +7,9 @@ Stage 1:
 5. create .vscode folder
 6. create settings.json file (settings.json) - you can also find this in the cloud-commerce-spartacus-storefront workspace in the .vscode folder
 7. Remove redundant markup from app.component.html
+8. yarn install
+9. yarn start
+10. http://localhost:4200
 
 Stage 2:
 
