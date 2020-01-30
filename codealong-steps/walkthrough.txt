@@ -5,5 +5,5 @@ Stage 1:
 3. ng add @spartacus/schematics --pwa --ssr --baseUrl https://localhost:9002 --baseSite electronics-spa
 4. Add folder to VS Code workspace
 5. create .vscode folder
-6. create settings.json file:
+6. create settings.json file (settings.json) - you can also find this in the cloud-commerce-spartacus-storefront workspace in the .vscode folder
 
