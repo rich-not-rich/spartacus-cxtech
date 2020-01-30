@@ -1,0 +1,9 @@
+Stage 1:
+
+1. ng new weatherapp --style=scss
+2. cd weatherapp
+3. ng add @spartacus/schematics --pwa --ssr --baseUrl https://localhost:9002 --baseSite electronics-spa
+4. Add folder to VS Code workspace
+5. create .vscode folder
+6. create settings.json file:
+
