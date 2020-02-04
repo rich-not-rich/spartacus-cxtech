@@ -33,3 +33,18 @@ Stage 3 - Simple Routing
 2. Open outlet.module.ts and add module imports for RouterModule and UrlModule
 3. Go to storefront, check the new button is displayed, and confirm that clicking it goes to the PLP
 
+Stage 4 - Custom Component:
+
+1. From the storefront, inspect the network and load the OCC response. Check that the WeatherSlot and component are displayed.
+2. ng g m weather
+3. ng g c weather
+4. Modify weather.module.ts from (weathermodule.txt)
+5. Add WeatherModule to app.module.ts
+6. ng g class default-layout-config
+7. Modify layout file (default-layout-config.txt)
+8. Update app.module.ts - add ConfigModule.withConfig(weatherLayoutConfig)
+9. View weather component showing on page
+10. Update weather.component.ts (weather-component-ts-1.txt)
+11. Update weather.component.html (weather-component-html-1.txt)
+12. View JSON on page
+13. Update weather.component.html (weather-component-html-2.txt)

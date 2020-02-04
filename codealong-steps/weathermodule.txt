@@ -1,0 +1,14 @@
+  imports: [
+    CommonModule,
+    ConfigModule.withConfig({
+      cmsComponents: {
+          WeatherComponent: {
+            component: WeatherComponent,
+            selector: 'app-weather',
+          },
+      },
+    } as CmsConfig)
+  ],
+  entryComponents: [WeatherComponent],
+  exports: [WeatherComponent],
+})
