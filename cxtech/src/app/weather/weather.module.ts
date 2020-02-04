@@ -1,22 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { WeatherComponent } from './weather.component';
-import { ConfigModule, CmsConfig } from '@spartacus/core';
-
-
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
+import { CmsConfig, ConfigModule } from "@spartacus/core";
+import { WeatherComponent } from "./weather.component";
 
 @NgModule({
   declarations: [WeatherComponent],
   imports: [
     CommonModule,
     ConfigModule.withConfig({
-      WeatherComponent: {
-        component: WeatherComponent,
-        selector: 'app-weather',
-      },
+      cmsComponents: {
+        WeatherComponent: {
+          component: WeatherComponent,
+          selector: "app-weather"
+        }
+      }
     } as CmsConfig)
   ],
   entryComponents: [WeatherComponent],
   exports: [WeatherComponent]
 })
-export class WeatherModule { }
+export class WeatherModule {}
