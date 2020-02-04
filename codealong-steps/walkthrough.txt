@@ -48,3 +48,13 @@ Stage 4 - Custom Component:
 11. Update weather.component.html (weather-component-html-1.txt)
 12. View JSON on page
 13. Update weather.component.html (weather-component-html-2.txt)
+
+Stage 5 - Use Open Weather API:
+
+1. ng g service services/open-weather
+2. modify service (open-weather.txt)
+3. modify component ts (weather-component-ts-2.txt)
+4. modify component html (weather-component-3.txt)
+5. Look at json displayed from open weather
+6. modify component html (weather-component-4.txt)
+7. Look at modified version of page

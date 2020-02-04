@@ -1,0 +1,6 @@
+<ng-container *ngIf="data$ | async as data">
+  <pre style="display:none;">     {{ data | json }}    </pre>
+  <ng-container *ngIf="getWeatherData(data.location) | async as weather">
+    <pre style="display:block;">     {{ weather | json }}    </pre>
+  </ng-container>
+</ng-container>
