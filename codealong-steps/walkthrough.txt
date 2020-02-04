@@ -1,4 +1,4 @@
-Stage 1:
+Stage 1 - Setup:
 
 1. ng new cxtech --style=scss
 2. cd cxtech
@@ -11,6 +11,25 @@ Stage 1:
 9. yarn start
 10. http://localhost:4200
 
-Stage 2:
+Stage 2 - Outlets:
 
-1.
+1. From the storefront, inspect the page & demonstrate the outlet information in the source
+2. Select Section1 as an outlet we would like to manipulate
+3. Open app.component.html and insert outlet code (outetref.txt)
+4. Go back to the browser, and observe our changes
+5. ng generate module outlet
+6. ng generate component outlet
+7. In VS Code open the new component and module so show what was generated
+8. Copy the selector name from outlet.component.ts (app-outlet)
+9. Open outlet.module.ts and apply changes
+10. In app.component.html change the ng-tempate body to use the selector
+11. In app.module.ts add OutletModule to the imports
+12. yarn start
+13. Look at the updated page in the browser 
+
+Stage 3 - Simple Routing
+
+1. Open outlet.component.html and add link (outletroute.txt)
+2. Open outlet.module.ts and add module imports for RouterModule and UrlModule
+3. Go to storefront, check the new button is displayed, and confirm that clicking it goes to the PLP
+
