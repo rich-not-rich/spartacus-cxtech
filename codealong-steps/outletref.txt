@@ -1,3 +1,0 @@
-<ng-template cxOutletRef="Section1" cxOutletPos="before">
-  Hi, this is cxTech London!
-</ng-template>
