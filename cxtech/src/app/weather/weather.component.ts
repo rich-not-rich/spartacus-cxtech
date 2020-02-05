@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { CmsComponentData } from "@spartacus/storefront";
-import { filter, tap } from "rxjs/operators";
+import { filter, map } from "rxjs/operators";
 import { OpenWeatherService } from "../services/open-weather.service";
 
 @Component({
@@ -10,7 +10,8 @@ import { OpenWeatherService } from "../services/open-weather.service";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WeatherComponent implements OnInit {
-  weather: any;
+  weather$: any;
+  data$: any;
 
   constructor(
     private componentData: CmsComponentData<any>,
@@ -18,14 +19,11 @@ export class WeatherComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.weather = this.weatherService.getForecast("London");
-  }
-
-  get data$() {
-    this.componentData.data$.pipe(
-      filter(Boolean),
-      tap(value => console.log("data"))
+    this.data$ = this.componentData.data$.pipe(
+      map(
+        data => (this.weather$ = this.weatherService.getForecast(data.location))
+      ),
+      filter(Boolean)
     );
-    return this.componentData.data$.pipe(filter(Boolean));
   }
 }
