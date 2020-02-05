@@ -1,1 +1,0 @@
-<a [routerLink]="{ cxRoute: 'category', params: { code: 1 } } | cxUrl" class="btn btn-secondary">Check out this great stuff!</a>

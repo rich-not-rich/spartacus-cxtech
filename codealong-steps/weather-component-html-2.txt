@@ -1,7 +1,0 @@
-<ng-container *ngIf="data$ | async as data">
-  <pre style="display:none;">     {{ data | json }}    </pre>
-  <div class="cx-label">The weather for {{ data.location }} is:</div>
-  <div *ngFor="let weather of data.weather | keyvalue" class="cx-property">
-    <div class="cx-label">{{ weather.key }} - {{ weather.value }}</div>
-  </div>
-</ng-container>
