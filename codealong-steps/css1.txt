@@ -1,0 +1,3 @@
+:root {
+  --cx-color-primary: mediumpurple;
+}

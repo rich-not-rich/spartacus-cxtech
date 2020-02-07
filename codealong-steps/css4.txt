@@ -1,32 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import "~@spartacus/styles/index";
-
-:root {
-  --cx-color-primary: mediumpurple;
-}
-
-.WeatherSlot {
-  background-color: var(--cx-color-info);
-}
-
-.cxtech-title {
-  color: white;
-  font-family: "Comic Sans MS";
-}
-
-.cxtech-weather {
-  display: flex;
-  color: white;
-}
-
-.cxtech-weather-date {
-  display: block;
-  font-size: x-small;
-  white-space: nowrap;
-  padding-right: 5px;
-}
-
 $skipComponentStyles: (cx-mini-cart);
 
 %custom-mini-cart {

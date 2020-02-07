@@ -59,6 +59,14 @@ Stage 5 - Use Open Weather API:
 6. modify component html (weather-component-4.txt)
 7. Look at modified version of page
 
-Stage 6 - Put the weather data in a store
+Stage 6 - Styling
 
-Stage 7 - Styling
+1. Inspect an element in the browser and change the value for --cx-color-primary to rebeccapurple
+2. Modify styles.scss (css1.txt)
+3. View the changes in the browser
+4. Modify styles.scss (css2.txt)
+5. View the changes in the browser
+6. Modify styles.scss (css3.txt)
+7. View the changes in the browser
+8. Modify styles.scss (css4.txt)
+9. View the changes in the browser
