@@ -58,3 +58,7 @@ Stage 5 - Use Open Weather API:
 5. Look at json displayed from open weather
 6. modify component html (weather-component-4.txt)
 7. Look at modified version of page
+
+Stage 6 - Put the weather data in a store
+
+Stage 7 - Styling

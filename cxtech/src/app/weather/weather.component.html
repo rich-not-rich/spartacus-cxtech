@@ -2,19 +2,21 @@
   <pre style="display:none;">     {{ data | json }}    </pre>
   <ng-container *ngIf="weather$ | async as weather">
     <pre style="display:none;">     {{ weather | json }}    </pre>
-    <h3 class="cx-global-message">
+    <h3 class="cxtech-title">
       Current weather forecast for {{ weather.city.name }}
     </h3>
-    <div *ngFor="let l of weather.list" class="cx-paragraph">
-      <div class="cx-label">
-        {{ l.dt * 1000 | date: "MMM d, h a" }}
-      </div>
-      <div class="cx-label" *ngFor="let w of l.weather">
-        <img
-          class="cx-media"
-          src="http://openweathermap.org/img/wn/{{ w.icon }}.png"
-        />
-        {{ l.main?.temp - 273.15 | number: "1.0-0" }}<sup>o</sup>
+    <div class="cxtech-weather">
+      <div *ngFor="let l of weather.list" class="cx-paragraph">
+        <div class="cxtech-weather-date">
+          {{ l.dt * 1000 | date: "MMM d, h a" }}
+        </div>
+        <div class="cx-tech-weather-value" *ngFor="let w of l.weather">
+          <img
+            class="cx-media"
+            src="http://openweathermap.org/img/wn/{{ w.icon }}.png"
+          />
+          {{ l.main?.temp - 273.15 | number: "1.0-0" }}<sup>o</sup>
+        </div>
       </div>
     </div>
   </ng-container>
