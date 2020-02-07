@@ -1,3 +1,0 @@
-.WeatherSlot {
-  background-color: var(--cx-color-info);
-}
